@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      .booklistTemplate{
+       margin-top: 5%;
+       }
+      .breadcrumb{
+       background-color: rgb(6, 187, 127);
+       padding: 0.6%;
+       color:white
+       }
+       span{
+         color:rgb(7, 95, 211) ;
+       }
+    </style>
+  </head>
+<body onload="init()">
+    <div class="container">
+        <h1 class="display-3 text-center"><svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16" fill="rgb(7, 95, 211)" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z" clip-rule="evenodd"/>
+          <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z" clip-rule="evenodd"/>
+        </svg>My<span>Book</span>List</h1>
+        <div class="breadcrumb">
+            <label>Book Added</label>
+        </div>
+        <label>Title</label>
+        <div class="input-group mb-3">
+            <input type="text" id="title" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" value="">
+          </div>
+          <label>Author</label>
+          <div class="input-group mb-3">
+              <input type="text" id="author" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" value="">
+            </div>
+            <label>ISBN#</label>
+            <div class="input-group mb-3">
+                <input type="text" id="isbn" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" value="">
+              </div>
+         <button type="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button> 
+         <div class="booklistTemplate">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">ISBN#</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="booklistTemplate1">
+                <!--<tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td> <svg class="bi bi-x-square-fill" width="1.2em" height="2em" viewBox="0 0 16 16" fill="rgb(187, 6, 6)" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2zm9.854 4.854a.5.5 0 00-.708-.708L8 7.293 4.854 4.146a.5.5 0 10-.708.708L7.293 8l-3.147 3.146a.5.5 0 00.708.708L8 8.707l3.146 3.147a.5.5 0 00.708-.708L8.707 8l3.147-3.146z" clip-rule="evenodd"/>
+                    </svg> </td>
+                  </tr>-->
+                </tbody>
+              </table>
+         </div> 
+   </div>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
